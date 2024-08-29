@@ -16,6 +16,8 @@ set $mod Mod4
 font pango:monospace 14
 exec_always feh --bg-scale ~/Pictures/nice-blue-background.png
 exec_always --no-startup-id polybar
+exec_always --no-startup-id setxkbmap -option ctrl:nocaps
+
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
