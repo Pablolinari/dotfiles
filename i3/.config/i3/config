@@ -17,6 +17,8 @@ font pango:monospace 14
 exec_always feh --bg-scale ~/Pictures/nice-blue-background.png
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
+exec_always --no-startup-id setxkbmap -option caps:swapescape
+
 
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -46,6 +48,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
+
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
