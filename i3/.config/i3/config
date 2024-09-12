@@ -18,7 +18,7 @@ exec_always feh --bg-scale ~/Pictures/nice-blue-background.png
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 exec_always --no-startup-id setxkbmap -option caps:swapescape
-
+exec_always --no-startup-id picom -b -f 
 
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
