@@ -1,6 +1,10 @@
 vim.cmd("let g:netrw_liststyle = 3")
-local opt = vim.opt 
+local opt = vim.opt
+
 opt.number = true
+opt.clipboard = "unnamedplus"
+opt.mouse ="a"
+
 --tabs and identations 
 opt.tabstop = 4 
 opt.shiftwidth = 4 
@@ -16,9 +20,6 @@ opt.background="dark"
 opt.signcolumn="yes"
 ----- backspace 
  opt.backspace = "indent,eol,start"
-
- --clipboard 
- opt.clipboard:append("unnamedplus")
  --splitwindows 
  opt.splitright=true
  opt.splitbelow=true
