@@ -16,6 +16,9 @@ keymap.set('n', '<c-j>',':wincmd j<CR>')
 keymap.set('n', '<c-h>',':wincmd h<CR>')
 keymap.set('n', '<c-l>',':wincmd l<CR>')
 
+-- keymap ejecutar archivo actual python 
+vim.api.nvim_set_keymap('n', '<leader>r', ':w<CR>:vsp | term python3 %<CR>i', { noremap = true, silent = true })
+
 -- Keymap para abrir plugins --
 
 keymap.set('n','<leader>p','<cmd>:edit ~/.config/nvim/lua/<CR>' , {desc = "Abre la configuracion de nvim "})
