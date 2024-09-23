@@ -570,4 +570,4 @@ awful.spawn.with_shell("xrandr --output HDMI-0 --rotate right")
 awful.spawn.with_shell("xrandr --output HDMI-0 --right-of DP-0")
 awful.spawn.with_shell("xrandr --output DP-0 --primary")
 
-awful.spawn.with_shell("feh --bg-scale ~/Pictures/nice-blue-background.png")
+awful.spawn.with_shell("feh --bg-scale ~/Pictures/wallpaper.jpg")
