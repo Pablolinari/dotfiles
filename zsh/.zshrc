@@ -126,6 +126,7 @@ alias cat='bat'
 alias lg='lazygit'
 alias f='fzf_cd'
 alias r='ranger'
+alias light='brightnessctl set'
 
 export PATH=/opt/cuda/bin:$PATH
 export LD_LIBRARY_PATH=/opt/cuda/lib64:$LD_LIBRARY_PATH
