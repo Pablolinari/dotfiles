@@ -63,9 +63,9 @@ modkey = "Mod4"
 awful.layout.layouts = {
     awful.layout.suit.tile,
     awful.layout.suit.floating,
-   -- awful.layout.suit.tile.left,
-   -- awful.layout.suit.tile.bottom,
-   -- awful.layout.suit.tile.top,
+   awful.layout.suit.tile.left,
+   awful.layout.suit.tile.bottom,
+   awful.layout.suit.tile.top,
    -- awful.layout.suit.fair,
    -- awful.layout.suit.fair.horizontal,
    -- awful.layout.suit.spiral,
@@ -323,7 +323,7 @@ globalkeys = gears.table.join(
               end,
               {description = "lua execute prompt", group = "awesome"}),
     -- Menubar
-    awful.key({ modkey }, "p", function() menubar.show() end,
+    awful.key({ modkey }, "d", function() awful.spawn.with_shell("rofi -show drun") end,
               {description = "show the menubar", group = "launcher"})
 )
 
