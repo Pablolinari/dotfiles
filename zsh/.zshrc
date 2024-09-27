@@ -124,8 +124,8 @@ alias la='lsd -la'
 alias ll='lsd -l'
 alias cat='bat'
 alias lg='lazygit'
-alias f='fzf_cd'
-alias r='ranger'
+alias f=ff'fzf_cd'
+alias rf='ranger'
 alias light='brightnessctl set'
 
 export PATH=/opt/cuda/bin:$PATH
