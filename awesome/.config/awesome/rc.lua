@@ -563,7 +563,6 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 --
 --
 -- Autostart aplaction 
-awful.spawn.with_shell("setxkbmap -option caps:swapescape")
 awful.spawn.with_shell("picom -b -f")
 
 awful.spawn.with_shell("xrandr --output HDMI-0 --rotate right")
