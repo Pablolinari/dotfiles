@@ -208,4 +208,5 @@ bar {
         status_command i3status
 }
 
-
+bindsym $mod + n exec systemctl suspend
+bindsym $mod + Q exec shutdown now
