@@ -209,4 +209,4 @@ bar {
 }
 
 bindsym $mod + n exec systemctl suspend
-bindsym $mod + Q exec shutdown now
+bindsym $mod+Shift+q exec shutdown now
