@@ -127,10 +127,10 @@ alias lg='lazygit'
 alias f=ff'fzf_cd'
 alias rf='ranger'
 alias light='brightnessctl set'
-
+alias code='com.visualstudio.code'
 export PATH=/opt/cuda/bin:$PATH
 export LD_LIBRARY_PATH=/opt/cuda/lib64:$LD_LIBRARY_PATH
-
+export EDITOR=nvim
 
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
