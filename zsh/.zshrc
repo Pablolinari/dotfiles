@@ -117,6 +117,8 @@ fzf_cd() {
   local dir
   dir=$(find ${1:-.} -type d 2> /dev/null | fzf) && cd "$dir"
 }
+
+unalias r
 ##ALIAS##
 alias n='neofetch'
 alias ls='lsd'
