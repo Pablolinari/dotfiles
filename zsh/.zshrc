@@ -120,13 +120,13 @@ fzf_cd() {
 
 ##ALIAS##
 alias n='neofetch'
+alias q='exit'
 alias ls='lsd'
 alias la='lsd -la'
 alias ll='lsd -l'
 alias cat='bat'
 alias lg='lazygit'
 alias f=ff'fzf_cd'
-alias r='ranger'
 alias light='brightnessctl set'
 alias code='com.visualstudio.code'
 export PATH=/opt/cuda/bin:$PATH
