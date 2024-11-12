@@ -118,6 +118,8 @@ fzf_cd() {
   dir=$(find ${1:-.} -type d 2> /dev/null | fzf) && cd "$dir"
 }
 
+export ANDROID_HOME=/opt/android-sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 ##ALIAS##
 alias n='neofetch'
 alias q='exit'
