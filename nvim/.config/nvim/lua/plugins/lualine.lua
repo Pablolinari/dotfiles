@@ -10,7 +10,7 @@ return {
     -- configure lualine with modified theme
     lualine.setup({
       options = {
-		  theme='horizon'
+		  theme='base16'
       },
     })
   end,

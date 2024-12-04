@@ -6,8 +6,8 @@ opt.clipboard = "unnamedplus"
 opt.mouse ="a"
 
 --tabs and identations 
-opt.tabstop = 4 
-opt.shiftwidth = 4 
+opt.tabstop = 2
+opt.shiftwidth = 2
 opt.autoindent = true
 
 --search setings 
