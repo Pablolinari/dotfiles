@@ -10,7 +10,6 @@ return{
 
   end,
 },
-
 {
     -- Plugin for the Kanagawa color scheme
     "rebelot/kanagawa.nvim",
