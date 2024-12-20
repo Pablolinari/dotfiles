@@ -1,10 +1,14 @@
 return {
 	{
 		"L3MON4D3/LuaSnip",
-		dependencies ={
+	},
+	{
+		
 			"saadparwaiz1/cmp_luasnip",
+	},
+	{
+
 			"rafamadriz/firendly-snippets",
-		}
 	},
 	{
   "hrsh7th/nvim-cmp",
