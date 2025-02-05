@@ -123,9 +123,6 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 ##ALIAS##
 alias n='neofetch'
 alias q='exit'
-alias ls='lsd'
-alias la='lsd -la'
-alias ll='lsd -l'
 alias cat='bat'
 alias lg='lazygit'
 alias f=ff'fzf_cd'
@@ -146,3 +143,4 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+source ~/powerlevel10k/powerlevel10k.zsh-theme
