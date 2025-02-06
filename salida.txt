@@ -1,0 +1,217 @@
+    1  ls
+    2  cd dotfiles
+    3  ls
+    4  cd ..
+    5  rm .zshrc
+    6  rm .zshrc.pre-oh-my-zsh
+    7  cd dotfiles
+    8  stow zsh
+    9  ls
+   10  la
+   11  git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.zsh/zsh-autosuggestions\n
+   12  ls
+   13  la
+   14  rm -rf .zsh
+   15  ls
+   16  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+   17  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+   18  ls
+   19  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k\necho 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+   20  ls
+   21  
+   22  
+   23  
+   24  sudo apt install awesome-terminal-fonts
+   25  sudo apt install powerline-common
+   26  sudo apt update && sudo apt install powerline fonts-powerline -y\n
+   27  ls
+   28  al
+   29  la
+   30  lsd
+   31  sudo apt install lsd
+   32  lsd
+   33  sudo apt remove lsd
+   34  sudo apt update && sudo apt remove powerline fonts-powerline \n
+   35  nvim .zshrc
+   36  sudo apt install nodejs
+   37  python3 --version
+   38  sudo apt install npm 
+   39  cd dotfiles
+   40  ls
+   41  cd .. 
+   42  ls
+   43  cd .config
+   44  ls
+   45  cd nvim
+   46  nvim 
+   47  sudo apt install nvim 
+   48  mkdir nvim 
+   49  ls
+   50  cd nvim
+   51  ls
+   52  cd ..
+   53  rmdir nvim
+   54  ls
+   55  cd .. 
+   56  cd dotfiles
+   57  stow nvim
+   58  lg
+   59  sudo apt install lazygit
+   60  LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | \grep -Po '"tag_name": *"v\K[^"]*')\ncurl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/download/v${LAZYGIT_VERSION}/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"\ntar xf lazygit.tar.gz lazygit\nsudo install lazygit -D -t /usr/local/bin/
+   61  lg
+   62  ls
+   63  rm lazygit
+   64  rm lazygit.tar.gz
+   65  lg
+   66  git config.global --use-name 
+   67  git config --global user.email "paablolinaari@gmail.com"
+   68  git config --global user.name "Pablolinari"
+   69  lsd
+   70  ls
+   71  nvim .zshrc
+   72  nvim 
+   73  sudo apt install powerline 
+   74  sudo apt install fonts-powerline
+   75  nvim 
+   76  sudo apt install fonts-powerline
+   77  bash
+   78  ls
+   79  nvim .config/kitty/kitty.conf
+   80  nvim 
+   81  q
+   82  sudo apt install alacrity 
+   83  sudo apt install alacritty
+   84  nvim 
+   85  sudo apt remove alacrity 
+   86  sudo apt remove alacritty 
+   87  cd .local/share/fonts
+   88  ls
+   89  cd
+   90  fc-cache -f -v
+   91  ls
+   92  nvim 
+   93  p10k configure
+   94  nvim .zsh_history
+   95  nvim .zshrc
+   96  ls
+   97  cd dotfiles
+   98  ls
+   99  lg
+  100  ls
+  101  cd 
+  102  gh repo clone Pablolinari/UGR ugr
+  103  ls
+  104  nvim ugr/SCD/p3/criba_erastotenes.cpp
+  105  nvim 
+  106  snap find "android-studio'\n\n"
+  107  sudo snap install android-studio --classic
+  108  gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'\n
+  109  gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'\n
+  110  ls
+  111  cd dotfiles
+  112  cd kittythemes
+  113  ls
+  114  nvim ayu.conf
+  115  lg
+  116  cd 
+  117  nvim ugr/SCD/p3/criba_erastotenes.cpp
+  118  nvim 
+  119  nvim .config/kitty/kitty.conf
+  120  ls
+  121  tmux
+  122  nvim .tmux.conf
+  123  tmux
+  124  tmux zsh
+  125  tmux source-file ~/.tmux.conf\n
+  126  tmux
+  127  ls
+  128  nvim 
+  129  nvim ugr/SCD/p3/criba_erastotenes.cpp
+  130  sudo apt update && sudo apt install ripgrep 
+  131  nvim ugr/SCD/p3/criba_erastotenes.cpp
+  132  mkdir croly
+  133  rmdir croly
+  134  mkdir scroly
+  135  ls
+  136  cd scroly
+  137  ls
+  138  npm expo create
+  139  npx create-expo-app
+  140  npm run web 
+  141  cd frontend
+  142  npm run 
+  143  expo start web
+  144  npm expo start web 
+  145  npx expo start web 
+  146  npx expo start 
+  147  npx run android
+  148  npx expo start 
+  149  cd scroly
+  150  ls
+  151  nvim frontend
+  152  rm frontend
+  153  npx create-expo-app --template blank
+  154  ls
+  155  rm -rf frontend
+  156  npx create-expo-app --template blank
+  157  nvim frontend
+  158  sudo apt install cargo 
+  159  sudo apt install clangd
+  160  cd scroly
+  161  nvim frontend
+  162  nvim
+  163  nvim 
+  164  sudo apt install gcc g++
+  165  sudo apt install make 
+  166  python3-venv
+  167  sudo apt install python3-venv
+  168  nvim 
+  169  npm eslint
+  170  npm -g install eslint
+  171  sudo npm -g install eslint
+  172  nvim 
+  173  cd scroly
+  174  ls
+  175  nvim frontend
+  176  nvim scroly/frontend
+  177  cd dotfiles
+  178  ls
+  179  lg
+  180  q
+  181  nvim .config/kitty/kitty.conf
+  182  ls
+  183  nvim .config/kitty/kitty.conf
+  184  ls
+  185  rm Desktop
+  186  ls
+  187  cd Desktop
+  188  ls
+  189  cd .. 
+  190  rm -rf Desktop
+  191  ls
+  192  ls Templates
+  193  ls
+  194  rm Templates
+  195  rm -rf Templates
+  196  rm -rf Music
+  197  ls
+  198  cd powerlevel10k
+  199  ls
+  200  cd ..
+  201  ls
+  202  rm -rf powerlevel10k
+  203  ls
+  204  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k\necho 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+  205  ls
+  206  tmuc
+  207  tmux
+  208  ls
+  209  ranger
+  210  ls
+  211  ripgrep 
+  212  ls
+  213  cd dotfiles
+  214  ls
+  215  lg
+  216  ls
+  217  history

@@ -123,7 +123,7 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 ##ALIAS##
 alias n='neofetch'
 alias q='exit'
-alias cat='bat'
+alias cat='batcat'
 alias lg='lazygit'
 alias f=ff'fzf_cd'
 alias light='brightnessctl set'
