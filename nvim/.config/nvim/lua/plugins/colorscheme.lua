@@ -14,11 +14,7 @@ return{
 
   end,
 },
-{
-    -- Plugin for the Kanagawa color scheme
-    "rebelot/kanagawa.nvim",
-    priority = 1000, -- High priority to ensure it loads early
-},
+{ "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
 
 {
 	"catppuccin/nvim",
@@ -33,10 +29,5 @@ return{
     "folke/tokyonight.nvim",
 		priority =1000,
   },
-  {
-    "baliestri/aura-theme",
-    lazy = false,
-    priority = 1000,
-  }
 }
 
