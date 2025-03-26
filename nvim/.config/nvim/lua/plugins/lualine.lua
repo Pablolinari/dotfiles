@@ -10,7 +10,7 @@ return {
     -- configure lualine with modified theme
     lualine.setup({
       options = {
-		  theme='ayu_dark'
+		  theme='iceberg_dark'
       },
     })
   end,
