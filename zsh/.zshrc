@@ -132,6 +132,22 @@ export PATH=/opt/cuda/bin:$PATH
 export LD_LIBRARY_PATH=/opt/cuda/lib64:$LD_LIBRARY_PATH
 export EDITOR=nvim
 
+# Añadir sudo al inicio de la línea con doble Escape
+
+# Función para agregar 'sudo ' al inicio de la línea al pulsar dos veces Escape
+
+
+# Función para detectar doble Escape y agregar 'sudo '
+last_escape=0
+add_sudo_on_double_escape() {
+        [[ -z $BUFFER ]] || BUFFER="sudo $BUFFER"
+        zle redisplay
+}
+
+zle -N add_sudo_on_double_escape
+bindkey '\e\e' add_sudo_on_double_escape
+
+
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
