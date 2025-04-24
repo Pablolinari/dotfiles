@@ -1,4 +1,8 @@
 return {
+{
+  "vague2k/vague.nvim",
+		priority=1000,
+},
 	{
 		"slugbyte/lackluster.nvim",
 		priority = 1000,
