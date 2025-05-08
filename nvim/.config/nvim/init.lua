@@ -1,6 +1,6 @@
 require("config.lazy")
 require("config.options")
 require("config.keymaps")
-vim.cmd('colorscheme vague')
+vim.cmd('colorscheme github_dark_colorbind')
 vim.o.conceallevel = 2
 
