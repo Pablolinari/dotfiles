@@ -2,6 +2,10 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap
 
+-- oil keymaps 
+	
+keymap.set("n", "<leader>e", "<cmd>Oil --float<CR>", { desc = "open oil" }) -- split window vertically
+keymap.set('n', '<leader-sa>','<cmd>suspend <CR>',{desc="suspend nvim "})
 keymap.set('n', '<c-s>','<cmd>wa <CR>')
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" }) -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" }) -- split window horizontally

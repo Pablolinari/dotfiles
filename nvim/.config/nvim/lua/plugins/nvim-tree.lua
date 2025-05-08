@@ -1,6 +1,6 @@
 return {
   "nvim-tree/nvim-tree.lua",
-  dependencies = "nvim-tree/nvim-web-devicons",
+  dependencies = "echasnovski/mini.icons",--"nvim-tree/nvim-web-devicons",
   config = function()
     local nvimtree = require("nvim-tree")
 
@@ -50,7 +50,7 @@ return {
     -- set keymaps
     local keymap = vim.keymap -- for conciseness
 
-    keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" }) -- toggle file explorer
+    --keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" }) -- toggle file explorer
 		keymap.set("n", "<CR>", "<cmd>lua require('nvim-tree.api').node.open.edit(); require('nvim-tree.api').tree.close()<CR>", { desc = "Open file and close tree" }) -- Cierra el árbol al abrir un archivo
  --   keymap.set("n", "<leader>ef", "<cmd>NvimTreeFindFileToggle<CR>", { desc = "Toggle file explorer on current file" }) -- toggle file explorer on current file
    -- keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse file explorer" }) -- collapse file explorer
