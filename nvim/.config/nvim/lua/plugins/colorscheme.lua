@@ -35,7 +35,10 @@ return {
 			-- ...
 		end,
 	},
-
+  {
+		"rebelot/kanagawa.nvim",
+	
+	},
 	{
 		"folke/tokyonight.nvim",
 		priority = 1000,
