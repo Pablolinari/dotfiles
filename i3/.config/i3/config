@@ -90,7 +90,7 @@ bindsym $mod+Shift+Right move right
 bindsym $mod+% split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod+ Shift +v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -183,6 +183,10 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+bindsym $mod + p exec flameshot gui
+bindsym $mod + v exec pavucontrol
+bindsym $mod + g exec firefox
+bindsym $mod + s exec spotify
 bindsym $mod + n exec systemctl suspend
 bindsym $mod+Shift+q exec shutdown now
 # Start i3bar to display a workspace bar (plus the system information i3status
