@@ -1,12 +1,15 @@
 return {
-{
-  "vague2k/vague.nvim",
-		priority=1000,
-		config =function ()
-			require("vague").setup({transparent =true})
-			
+	{
+		"vague2k/vague.nvim",
+		priority = 1000,
+		config = function()
+			require("vague").setup({ transparent = true })
 		end
-},
+	},
+	{
+		"Mofiqul/vscode.nvim",
+		priority=1000,
+	},
 	{
 		"slugbyte/lackluster.nvim",
 		priority = 1000,
@@ -17,7 +20,7 @@ return {
 	},
 	{
 		"projekt0n/github-nvim-theme",
-		lazy = false, -- make sure we load this during startup if it is your main colorscheme
+		lazy = false,  -- make sure we load this during startup if it is your main colorscheme
 		priority = 1000, -- make sure to load this before all the other start plugins
 		config = function()
 			require("github-theme").setup({
@@ -29,15 +32,15 @@ return {
 
 	{
 		"catppuccin/nvim",
-		lazy = false, -- make sure we load this during startup if it is your main colorscheme
+		lazy = false,  -- make sure we load this during startup if it is your main colorscheme
 		priority = 1000, -- make sure to load this before all the other start plugins
 		config = function()
 			-- ...
 		end,
 	},
-  {
+	{
 		"rebelot/kanagawa.nvim",
-	
+
 	},
 	{
 		"folke/tokyonight.nvim",
