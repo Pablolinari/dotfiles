@@ -123,10 +123,11 @@ export ANDROID_HOME=/opt/android-sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 ##ALIAS##
 alias n='neofetch'
+alias r='ranger'
 alias q='exit'
 alias cat='batcat'
 alias lg='lazygit'
-alias f=ff'fzf_cd'
+alias f='fzf_cd'
 alias light='brightnessctl set'
 alias n='nvim'
 export PATH=/opt/cuda/bin:$PATH
@@ -148,6 +149,9 @@ add_sudo_on_double_escape() {
 zle -N add_sudo_on_double_escape
 bindkey '\e\e' add_sudo_on_double_escape
 
+export PATH=/opt/cuda/bin:$PATH
+export LD_LIBRARY_PATH=/opt/cuda/lib64:$LD_LIBRARY_PATH
+export CUDA_HOME=/opt/cuda
 
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"

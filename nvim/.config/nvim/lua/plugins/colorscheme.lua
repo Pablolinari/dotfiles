@@ -7,11 +7,20 @@ return {
 		end
 	},
 	{
-		"Mofiqul/vscode.nvim",
-		priority=1000,
+		"sainnhe/everforest",
+		priority = 1000,
 	},
 	{
-		"slugbyte/lackluster.nvim",
+		"NLKNguyen/papercolor-theme",
+		priority = 1000,
+	},
+	{
+		'Mofiqul/vscode.nvim',
+		priority = 1000,
+
+	},
+	{
+		"morhetz/gruvbox",
 		priority = 1000,
 	},
 	{
@@ -24,7 +33,6 @@ return {
 		priority = 1000, -- make sure to load this before all the other start plugins
 		config = function()
 			require("github-theme").setup({
-				-- ...
 			})
 		end,
 	},
@@ -40,6 +48,7 @@ return {
 	},
 	{
 		"rebelot/kanagawa.nvim",
+		priority = 1000,
 
 	},
 	{
