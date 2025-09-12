@@ -2,9 +2,9 @@ include ~/dotfiles/kittythemes/ayu.conf
 font_family CaskaydiaCove NFM
 font_size 20 
 enable_audio_bell no
-background_opacity 0.98
+background_opacity 1
 
 # BEGIN_KITTY_THEME
-# Gruvbox Dark Hard
+# Gruvbox Dark
 include current-theme.conf
 # END_KITTY_THEME
