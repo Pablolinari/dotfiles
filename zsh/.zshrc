@@ -148,6 +148,12 @@ add_sudo_on_double_escape() {
 
 zle -N add_sudo_on_double_escape
 bindkey '\e\e' add_sudo_on_double_escape
+## export android studio 
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin## exports cuda
 
 export PATH=/opt/cuda/bin:$PATH
 export LD_LIBRARY_PATH=/opt/cuda/lib64:$LD_LIBRARY_PATH
