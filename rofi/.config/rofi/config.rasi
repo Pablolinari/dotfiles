@@ -10,4 +10,4 @@ configuration{
     sidebar-mode: true;
 }
 
-@theme "DarkBlue"
+@theme "./spotlightdark-theme.rasi"
