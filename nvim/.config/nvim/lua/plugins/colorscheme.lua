@@ -12,7 +12,7 @@ return {
 		priority = 1000,
 	},
 	{
-		"sainnhe/everforest",
+		"thimc/gruber-darker.nvim",
 		priority = 1000,
 	},
 	{
