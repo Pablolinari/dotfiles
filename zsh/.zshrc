@@ -169,3 +169,6 @@ export NVM_DIR="$HOME/.nvm"
 
  
 
+
+# opencode
+export PATH=/home/pablolinari/.opencode/bin:$PATH
