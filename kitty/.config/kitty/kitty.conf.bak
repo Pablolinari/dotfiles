@@ -2,9 +2,9 @@ include ~/dotfiles/kittythemes/ayu.conf
 font_family CaskaydiaCove NFM
 font_size 25 
 enable_audio_bell no
-background_opacity 0.9
+background_opacity 1
 
 # BEGIN_KITTY_THEME
-# Tokyo Night Moon
+# Material Dark
 include current-theme.conf
 # END_KITTY_THEME
