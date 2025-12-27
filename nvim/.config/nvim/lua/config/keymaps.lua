@@ -28,15 +28,6 @@ keymap.set('n', '<c-l>',':wincmd l<CR>')
 
 keymap.set('n', '<leader>tt','<cmd>ToggleTerm direction=float <CR>',{desc="open floating term"})
 
--- keymap para chat con copilot 
-
-keymap.set('n','<leader>cp','<cmd>:CopilotChatPrompts<CR>',{desc="copilotprompts"})
-
-keymap.set('n','<leader>cc','<cmd>:CopilotChat<CR>',{desc="copilotprompts"})
--- Keymap para abrir plugins --
-
-keymap.set('n','<leader>p','<cmd>:edit ~/.config/nvim/lua/<CR>' , {desc = "Abre la configuracion de nvim "})
-
 ---harpoon keymaps --- 
 
 local harpoon = require("harpoon")
