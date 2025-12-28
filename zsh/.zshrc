@@ -130,6 +130,7 @@ alias lg='lazygit'
 alias f='fzf_cd'
 alias light='brightnessctl set'
 alias n='nvim'
+alias o='opencode'
 export PATH=/opt/cuda/bin:$PATH
 export LD_LIBRARY_PATH=/opt/cuda/lib64:$LD_LIBRARY_PATH
 export EDITOR=nvim
