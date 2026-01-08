@@ -1,10 +1,10 @@
 include ~/dotfiles/kittythemes/ayu.conf
 font_family CaskaydiaCove NFM
-font_size 25 
+font_size 20 
 enable_audio_bell no
 background_opacity 1
-
+cursor_trail 3
 # BEGIN_KITTY_THEME
-# Material Dark
+# Default
 include current-theme.conf
 # END_KITTY_THEME
