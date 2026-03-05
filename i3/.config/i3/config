@@ -196,7 +196,7 @@ bindsym $mod+r mode "resize"
 
 bindsym $mod + p exec flameshot gui
 bindsym $mod + v exec pavucontrol
-bindsym $mod + g exec firefox
+bindsym $mod+g exec --no-startup-id firefox --new-window https://gemini.google.com
 bindsym $mod + s exec spotify
 bindsym $mod + n exec systemctl suspend
 bindsym $mod+Shift+q exec shutdown now
