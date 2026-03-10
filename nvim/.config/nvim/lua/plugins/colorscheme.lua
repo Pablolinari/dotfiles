@@ -11,7 +11,7 @@ return {
 		priority = 1000,
 	},
 	{
-		"NLKNguyen/papercolor-theme",
+		"yorickpeterse/nvim-grey",
 	},
 	{
 		'Mofiqul/vscode.nvim',
