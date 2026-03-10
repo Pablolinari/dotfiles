@@ -27,7 +27,7 @@ keymap.set('n', '<c-l>',':wincmd l<CR>')
 
 -- togle terminal 
 
-keymap.set('n', '<leader>tt','<cmd>ToggleTerm direction=float <CR>',{desc="open floating term"})
+keymap.set('n', 'C-y','<cmd>ToggleTerm direction=float <CR>',{desc="open floating term"})
 
 ---harpoon keymaps --- 
 
