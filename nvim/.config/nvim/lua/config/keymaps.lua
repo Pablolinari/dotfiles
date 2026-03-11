@@ -8,7 +8,7 @@ keymap.set("n", "<leader>a", ':suspend <CR>', { desc = "suspend" })
 keymap.set("n", "<leader>o", ':update <CR> :source <CR>', { desc = "source" }) 
 --nvimtree and oil keymaps 
 	
-keymap.set("n", "<leader>e", "<cmd>Oil<CR>", { desc = "open oil" }) -- split window vertically
+keymap.set("n", "<leader>e", "<cmd>Oil --float<CR>", { desc = "open oil" }) -- split window vertically
 --keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "open oil" }) -- split window vertically
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" }) -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" }) -- split window horizontally

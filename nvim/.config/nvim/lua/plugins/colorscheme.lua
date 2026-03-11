@@ -7,11 +7,11 @@ return {
 		end
 	},
 	{
-		"thimc/gruber-darker.nvim",
+		"oskarnurm/koda.nvim",
 		priority = 1000,
 	},
 	{
-		"yorickpeterse/nvim-grey",
+		"andreypopp/vim-colors-plain",
 	},
 	{
 		'Mofiqul/vscode.nvim',
@@ -22,6 +22,11 @@ return {
 		"Shatur/neovim-ayu",
 		priority = 1000, -- Ensure it loads first
 	},
+	{
+		"navarasu/onedark.nvim",
+		priority = 1000, -- Ensure it loads first
+	},
+
 
 	{
 		"folke/tokyonight.nvim",
