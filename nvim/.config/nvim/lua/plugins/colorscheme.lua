@@ -11,6 +11,10 @@ return {
 		priority = 1000,
 	},
 	{
+		"twerth/ir_black"
+
+	},
+	{
 		"andreypopp/vim-colors-plain",
 	},
 	{
