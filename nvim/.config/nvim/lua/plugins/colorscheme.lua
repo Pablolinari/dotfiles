@@ -11,7 +11,7 @@ return {
 		priority = 1000,
 	},
 	{
-		"twerth/ir_black"
+		"alexanderbluhm/black.nvim"
 
 	},
 	{
