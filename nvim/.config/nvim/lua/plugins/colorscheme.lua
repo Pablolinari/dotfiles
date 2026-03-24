@@ -14,6 +14,7 @@ return {
 		"alexanderbluhm/black.nvim"
 
 	},
+{ "rjmacarthy/oscura-vscode.nvim" },
 	{
 		"Mofiqul/adwaita.nvim",
         lazy = false,
