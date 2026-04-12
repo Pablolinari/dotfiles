@@ -124,6 +124,7 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 ##ALIAS##
 alias n='neofetch'
 alias r='ranger'
+alias y='yazi'
 alias q='exit'
 alias cat='bat'
 alias lg='lazygit'
@@ -175,3 +176,5 @@ export NVM_DIR="$HOME/.nvm"
 export PATH=/home/pablolinari/.opencode/bin:$PATH
 
 #. "$HOME/.local/bin/env"
+
+eval "$(zoxide init zsh)"
