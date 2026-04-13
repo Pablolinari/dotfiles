@@ -1,10 +1,10 @@
 include ~/dotfiles/kittythemes/ayu.conf
 font_family CaskaydiaCove NFM
-font_size 20 
+font_size 16
 enable_audio_bell no
 background_opacity 0.95
 cursor_trail 3
 # BEGIN_KITTY_THEME
-# VSCode_Dark
+# Kanagawa_dragon
 include current-theme.conf
 # END_KITTY_THEME

@@ -1,4 +1,5 @@
 return {
+{ "ellisonleao/gruvbox.nvim", priority = 1000 , config = true},
 	{
 		"vague2k/vague.nvim",
 		priority = 1000,
@@ -14,7 +15,6 @@ return {
 		"alexanderbluhm/black.nvim"
 
 	},
-{ "rjmacarthy/oscura-vscode.nvim" },
 	{
 		"Mofiqul/adwaita.nvim",
         lazy = false,
@@ -42,4 +42,5 @@ return {
 		"folke/tokyonight.nvim",
 		priority = 1000,
 	},
+	
 }
