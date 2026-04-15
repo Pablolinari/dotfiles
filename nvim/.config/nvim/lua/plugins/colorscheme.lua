@@ -7,6 +7,8 @@ return {
 			require("vague").setup({ transparent = true })
 		end
 	},
+
+{ "rjmacarthy/oscura-vscode.nvim" },
 	{
 		"oskarnurm/koda.nvim",
 		priority = 1000,
