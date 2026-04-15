@@ -194,7 +194,8 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-bindsym $mod + p exec flameshot gui
+bindsym --release $mod+p exec --no-startup-id flameshot gui
+bindsym Print exec --no-startup-id flameshot gui
 bindsym $mod + v exec pavucontrol
 bindsym $mod+g exec --no-startup-id firefox --new-window https://gemini.google.com
 bindsym $mod + s exec spotify
