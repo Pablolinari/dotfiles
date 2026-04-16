@@ -1,6 +1,10 @@
 vim.g.mapleader = " "
 
 local keymap = vim.keymap
+-- ir a los plugins
+
+keymap.set("n", "<leader>p", "<cmd>:e ~/.config/nvim/lua/plugins<CR>", { desc = "Go to previous tab" }) --  go to previous tab
+--
 
 keymap.set("n", "<leader>q", ':q <CR>', { desc = "quit" }) 
 keymap.set("n", "<leader>w", ':w <CR>', { desc = "write" }) 
