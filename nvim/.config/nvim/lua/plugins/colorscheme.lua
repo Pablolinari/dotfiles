@@ -1,35 +1,17 @@
 return {
 {
-  'f4z3r/gruvbox-material.nvim',
-  name = 'gruvbox-material',
-  lazy = false,
+  "ellisonleao/gruvbox.nvim",
+  name = "gruvbox",
   priority = 1000,
-  init = function()
-    vim.api.nvim_create_autocmd("ColorSchemePre", {
-      pattern = "gruvbox-material",
-      callback = function()
-        vim.o.background = "light"
-      end,
-    })
-  end,
   opts = {
-    italics = false,
-    contrast = "medium",
-    comments = {
-      italics = false,
+    contrast = "soft",
+    italic = {
+      strings = false,
+      emphasis = false,
+      comments = false,
+      operators = false,
+      folds = false,
     },
-    background = {
-      transparent = false,
-    },
-    float = {
-      force_background = false,
-      background_color = nil,
-    },
-    signs = {
-      force_background = false,
-      background_color = nil,
-    },
-    customize = nil,
   },
 },
 	{
