@@ -6,7 +6,6 @@ vim.cmd(":hi statusline guibg=NONE")
 -- para transparencia 
 vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-
 vim.cmd('colorscheme gruvbox')
 vim.g.adwaita_darker = true -- for darker version
 --cambiar colores  del fondo 
