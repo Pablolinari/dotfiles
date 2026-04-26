@@ -191,7 +191,7 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 bindsym $mod+r mode "resize"
-bindsym $mod + v exec maim -s -u | xclip -selection clipboard -t image/png
+bindsym $mod + e exec maim -s -u | xclip -selection clipboard -t image/png
 bindsym $mod + v exec pavucontrol
 bindsym $mod+g exec --no-startup-id firefox --new-window https://gemini.google.com
 bindsym $mod + s exec spotify
