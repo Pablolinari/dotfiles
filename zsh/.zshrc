@@ -125,6 +125,7 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 alias n='neofetch'
 alias r='ranger'
 alias y='yazi'
+alias cd='z'
 alias q='exit'
 alias cat='bat'
 alias lg='lazygit'
