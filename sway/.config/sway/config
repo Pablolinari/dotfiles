@@ -46,7 +46,7 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec kitty
 
-bindsym $mod+d exec rofi -show drun -show-icons
+bindsym $mod+d exec rofi -show drun -theme ~/.config/rofi/launcher.rasi
 # kill focused window
 bindsym $mod+w kill
 

@@ -8,6 +8,18 @@ return {
     "folke/todo-comments.nvim",
   },
   config = function()
+    if vim.treesitter and vim.treesitter.language then
+      vim.treesitter.language.ft_to_lang = vim.treesitter.language.ft_to_lang
+        or vim.treesitter.language.get_lang
+        or function(ft)
+          local ok, parsers = pcall(require, "nvim-treesitter.parsers")
+          if ok and parsers and parsers.ft_to_lang then
+            return parsers.ft_to_lang(ft)
+          end
+          return ft
+        end
+    end
+
     local telescope = require("telescope")
     local actions = require("telescope.actions")
  
