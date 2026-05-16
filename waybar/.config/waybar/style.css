@@ -1,39 +1,7 @@
-* {
-    border: none;
-    border-radius: 0;
-    font-family: "monospace";
-    font-size: 13px;
-    min-height: 0;
-}
-
-window#waybar {
-    background: rgba(0, 0, 0, 0.8);
-    color: #ffffff;
-}
-
-#workspaces button {
-    padding: 0 5px;
-    background: transparent;
-    color: #ffffff;
-}
-
-#workspaces button.focused {
-    background: #64727D;
-}
-
-#clock, #battery, #pulseaudio, #network {
-    padding: 0 10px;
-    margin: 0 2px;
-}
-
-#battery.charging {
-    color: #26A65B;
-}
-
-#battery.warning:not(.charging) {
-    color: #ff5555;
-}
-
-#network.disconnected {
-    color: #ff5555;
-}
+@import url("style/00-vars.css");
+@import url("style/10-base.css");
+@import url("style/20-workspaces.css");
+@import url("style/30-groups.css");
+@import url("style/40-custom.css");
+@import url("style/50-modules.css");
+@import url("style/60-animations.css");
