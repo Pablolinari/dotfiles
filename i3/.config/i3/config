@@ -63,7 +63,7 @@ tiling_drag modifier titlebar
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
-bindsym $mod+d exec rofi -show run
+bindsym $mod+d exec rofi -show run -theme ~/.config/rofi/launcher.rasi
 # kill focused window
 bindsym $mod+w kill
 

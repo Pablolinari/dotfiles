@@ -1,7 +1,7 @@
 configuration {
   show-icons: true;
   drun-display-format: "{name}";
-  display-drun: " 󰍉 ";
+  display-drun: "";
   hover-select: true;
 }
 
@@ -22,7 +22,7 @@ configuration {
 window {
   location: center;
   anchor: center;
-  width: 920px;
+  width: 600px;
 
   background-color: rgba(24, 24, 24, 0.96);
   border: 2px;
@@ -61,9 +61,9 @@ listview {
   background-color: transparent;
 
   columns: 5;
-  lines: 4;
+  lines: 2;
 
-  spacing: 10;
+  spacing: 5;
   cycle: true;
   dynamic: false;
   scrollbar: false;
@@ -94,7 +94,7 @@ element selected {
 
 element-icon {
   background-color: transparent;
-  size: 64px;
+  size: 40px;
   horizontal-align: 0.5;
 }
 
