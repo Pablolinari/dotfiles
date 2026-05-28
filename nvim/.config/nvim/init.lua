@@ -34,7 +34,7 @@ vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 vim.cmd("colorscheme onedark")
 vim.g.adwaita_darker = true -- for darker version
 --cambiar colores  del fondo
-vim.o.background = "light"
+vim.o.background = "dark"
 
 -- La pestaña que SÍ está activa
 -- Lua:
