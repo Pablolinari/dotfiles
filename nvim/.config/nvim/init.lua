@@ -34,8 +34,20 @@ vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 vim.cmd("colorscheme onedark")
 vim.g.adwaita_darker = true -- for darker version
 --cambiar colores  del fondo
-vim.o.background = "dark"
+vim.o.background = "light"
 
+-- Habilita la auto-lectura de archivos modificados externamente
+vim.o.autoread = true
+
+-- Forzar a Neovim a revisar si hay cambios al cambiar de foco o dejar la terminal
+vim.api.nvim_create_autocmd({ "FocusGained", "TermLeave", "TermClose", "CursorHold", "CursorHoldI" }, {
+  pattern = "*",
+  callback = function()
+    if vim.fn.mode() ~= "c" then
+      vim.cmd("checktime")
+    end
+  end,
+})
 -- La pestaña que SÍ está activa
 -- Lua:
 --vim.g.adwaita_disable_cursorline = true -- to disable cursorline
