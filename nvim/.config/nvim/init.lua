@@ -34,7 +34,7 @@ vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 vim.cmd("colorscheme onedark")
 vim.g.adwaita_darker = true -- for darker version
 --cambiar colores  del fondo
-vim.o.background = "dark"
+vim.o.background = "light"
 
 -- Habilita la auto-lectura de archivos modificados externamente
 vim.o.autoread = true
