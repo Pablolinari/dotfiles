@@ -1,10 +1,10 @@
 include ~/dotfiles/kitty/.config/kitty/oscuravscode.conf
 font_family CaskaydiaCove NFM
-font_size 22
+font_size 18
 enable_audio_bell no
 background_opacity 0.95
 cursor_trail 3
 # BEGIN_KITTY_THEME
-# One Half Light
+# Atom One Light
 include current-theme.conf
 # END_KITTY_THEME
