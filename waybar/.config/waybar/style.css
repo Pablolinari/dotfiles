@@ -6,21 +6,40 @@
 @define-color dark-5 rgba(113, 113, 122, 1);
 
 * {
-  /* `otf-font-awesome` is required to be installed for icons */
   font-family: JetBrainsMono Nerd Font Propo;
   font-size: 12px;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  transition: none;
 }
 
 window#waybar {
-  background-color: @dark-9;
+  background: @dark-9;
   color: white;
 }
 
-#workspaces button {
-  padding: 3px;
-  margin: 7px 0px 7px 7px;
+.modules-left,
+.modules-center,
+.modules-right {
   background: transparent;
-  border-radius: 2px;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+#workspaces button {
+  padding: 0px 8px;
+  margin: 0;
+  background: @dark-8;
+  border-radius: 0;
+  color: rgba(255, 255, 255, 0.6);
+  border: none;
+  min-height: 26px;
+}
+
+#workspaces button:hover {
+  background: @dark-7;
   color: white;
 }
 
@@ -30,29 +49,43 @@ window#waybar {
   font-weight: 700;
 }
 
-#mode,
+#workspaces button.urgent {
+  background: rgba(227, 81, 73, 1);
+  color: white;
+}
+
+#mode {
+  background: rgba(227, 81, 73, 1);
+  color: white;
+  padding: 0px 10px;
+  font-weight: 700;
+}
+
 #battery,
 #bluetooth,
 #network,
-#cpu,
-#memory,
-#volume {
-  border-radius: 8px;
-  padding: 5px 8px;
-  background: @dark-8;
-  margin: 5px 10px 5px 0px;
+#clock,
+#pulseaudio {
+  padding: 0px 10px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.85);
 }
 
-#mode,
-#workspaces button.urgent {
-  background: rgba(227, 81, 73, 1);
-  color: black;
+#battery.charging {
+  color: @highlight;
+}
+
+#battery.warning:not(.charging) {
+  color: rgba(251, 191, 36, 1);
+}
+
+#battery.critical:not(.charging) {
+  color: rgba(227, 81, 73, 1);
 }
 
 #pulseaudio-slider {
   padding: 0px;
-  margin: 0px;
-  margin-left: 8px;
+  margin: 0px 6px;
 }
 
 #pulseaudio-slider slider {
@@ -66,42 +99,47 @@ window#waybar {
 }
 
 #pulseaudio-slider trough {
-  min-height: 8px;
-  min-width: 75px;
-  border-radius: 5px;
+  min-height: 5px;
+  min-width: 60px;
+  border-radius: 3px;
   background: @dark-7;
 }
 
 #pulseaudio-slider highlight {
   min-width: 10px;
-  border-radius: 5px;
+  border-radius: 3px;
   background: @highlight;
 }
 
-#media {
-  color: #42ff9f;
-  margin: 7px 0px 7px 80px;
+#clock {
+  color: white;
+  font-weight: 500;
 }
 
 #custom-media-animation {
   font-size: 13px;
-  margin-right: 10px;
+  margin-right: 4px;
+  color: rgba(66, 255, 159, 0.9);
+  padding-left: 10px;
 }
 
 #custom-media-now-playing {
-  margin-right: 10px;
+  color: rgba(66, 255, 159, 1);
 }
 
 #custom-media-time {
   color: @dark-5;
-  font-size: 14px;
+  font-size: 11px;
+  padding-right: 6px;
 }
 
 tooltip {
   background: @dark-9;
-  border-radius: 5px;
+  border-radius: 4px;
+  border: 1px solid @dark-7;
 }
 
 tooltip label {
   color: white;
+  padding: 4px 8px;
 }
