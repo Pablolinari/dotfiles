@@ -179,3 +179,4 @@ export PATH=/home/pablolinari/.opencode/bin:$PATH
 #. "$HOME/.local/bin/env"
 
 eval "$(zoxide init zsh)"
+export PATH="$HOME/.local/bin:$PATH"
