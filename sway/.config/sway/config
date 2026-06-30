@@ -1,7 +1,7 @@
 # Sway config file
 # Please see https://swaywm.org for a complete reference!
 input "type:keyboard" {
-	xkb_layout "es"
+	xkb_layout "us"
 }
 set $mod Mod4
 
