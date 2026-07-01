@@ -19,7 +19,7 @@ output "*" bg ~/dotfiles/wallpapers/fedora.png fill
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment sway
 # swaylock locks the screen. Use loginctl lock-session to lock your screen.
-exec --no-startup-id swaylock
+#exec --no-startup-id swaylock
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
