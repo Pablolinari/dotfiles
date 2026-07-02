@@ -8,16 +8,20 @@ return {
     "folke/todo-comments.nvim",
   },
   config = function()
-    if vim.treesitter and vim.treesitter.language then
-      vim.treesitter.language.ft_to_lang = vim.treesitter.language.ft_to_lang
-        or vim.treesitter.language.get_lang
-        or function(ft)
-          local ok, parsers = pcall(require, "nvim-treesitter.parsers")
-          if ok and parsers and parsers.ft_to_lang then
-            return parsers.ft_to_lang(ft)
-          end
-          return ft
-        end
+    -- nvim-treesitter v1.x removed ft_to_lang and nvim-treesitter.configs entirely
+    local ts_ok, ts_parsers = pcall(require, "nvim-treesitter.parsers")
+    if ts_ok and ts_parsers and not ts_parsers.ft_to_lang then
+      ts_parsers.ft_to_lang = function(ft)
+        return vim.treesitter.language.get_lang(ft) or ft
+      end
+    end
+
+    if not package.loaded["nvim-treesitter.configs"] then
+      package.loaded["nvim-treesitter.configs"] = {
+        is_enabled = function(_, _, bufnr)
+          return vim.treesitter.highlighter.active[bufnr or 0] ~= nil
+        end,
+      }
     end
 
     local telescope = require("telescope")
