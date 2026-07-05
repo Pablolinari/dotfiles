@@ -2,6 +2,7 @@
 # Please see https://swaywm.org for a complete reference!
 input "type:keyboard" {
 	xkb_layout "us"
+	xkb_variant "intl"
 }
 set $mod Mod4
 

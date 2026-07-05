@@ -1,10 +1,11 @@
 {
     "layer": "top",
+    "position": "top",
     "height": 26,
     "spacing": 0,
     "modules-left": ["sway/workspaces", "group/media"],
-    "modules-center": ["clock"],
-    "modules-right": ["sway/mode", "group/volume", "battery", "bluetooth", "network"],
+    "modules-center": [],
+    "modules-right": ["sway/mode", "group/volume", "battery", "bluetooth", "network", "clock"],
     "sway/window": {
         "max-length": 50
     },
