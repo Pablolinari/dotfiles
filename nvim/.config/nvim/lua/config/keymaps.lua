@@ -1,6 +1,9 @@
 vim.g.mapleader = " "
 
 local keymap = vim.keymap
+
+-- permite que gf/<leader>gd encuentre archivos en subcarpetas del cwd, no solo en el dir actual
+vim.opt.path:append("**")
 -- ir a los plugins
 
 keymap.set("n", "<leader>p", "<cmd>:e ~/.config/nvim/lua/plugins<CR>", { desc = "Go to previous tab" }) --  go to previous tab
@@ -9,7 +12,8 @@ keymap.set("n", "<leader>p", "<cmd>:e ~/.config/nvim/lua/plugins<CR>", { desc = 
 keymap.set("n", "<leader>q", ':q <CR>', { desc = "quit" }) 
 keymap.set("n", "<leader>w", ':w <CR>', { desc = "write" }) 
 keymap.set("n", "<leader>a", ':suspend <CR>', { desc = "suspend" }) 
-keymap.set("n", "<leader>o", ':update <CR> :source <CR>', { desc = "source" }) 
+keymap.set("n", "<leader>o", ':update <CR> :source <CR>', { desc = "source" })
+keymap.set("n", "<leader>gd", "gf", { desc = "Abrir archivo/ruta bajo el cursor" })
 --nvimtree and oil keymaps 
 	
 --keymap.set("n", "<leader>e", "<cmd>Oil --float<CR>", { desc = "open oil" }) -- split window vertically

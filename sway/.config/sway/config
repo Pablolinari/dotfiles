@@ -156,5 +156,5 @@ bindsym $mod+g exec --no-startup-id firefox --new-window https://gemini.google.c
 bindsym $mod+s exec spotify
 bindsym $mod+n exec systemctl suspend
 bindsym $mod+Shift+q exec shutdown now
-exec_always killall waybar ;waybar
+exec_always "killall waybar; exec waybar"
 bindsym $mod+b exec killall -SIGUSR1 waybar

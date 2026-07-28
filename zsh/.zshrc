@@ -180,3 +180,13 @@ export PATH=/home/pablolinari/.opencode/bin:$PATH
 
 eval "$(zoxide init zsh)"
 export PATH="$HOME/.local/bin:$PATH"
+
+# Auto-iniciar tmux en terminales de sistema (no en terminales integradas de editores)
+if command -v tmux &> /dev/null \
+  && [ -z "$TMUX" ] \
+  && [ -n "$PS1" ] \
+  && [[ "$TERM_PROGRAM" != "vscode" ]] \
+  && [ -z "$CURSOR_TRACE_ID" ] \
+  && [[ -z "$VSCODE_INJECTION" ]]; then
+  exec tmux new-session -s "term-$$"
+fi
