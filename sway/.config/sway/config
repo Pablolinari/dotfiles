@@ -158,3 +158,4 @@ bindsym $mod+n exec systemctl suspend
 bindsym $mod+Shift+q exec shutdown now
 exec_always "killall waybar; exec waybar"
 bindsym $mod+b exec killall -SIGUSR1 waybar
+				output * background /home/pablolinari/Pictures/wapaper1.png fill 
