@@ -159,3 +159,8 @@ bindsym $mod+Shift+q exec shutdown now
 exec_always "killall waybar; exec waybar"
 bindsym $mod+b exec killall -SIGUSR1 waybar
 				output * background /home/pablolinari/Pictures/wapaper1.png fill 
+
+
+# Mapeo de evento: Cierre y apertura de tapa del portátil
+bindswitch --reload --locked lid:on output eDP-1 disable
+bindswitch --reload --locked lid:off output eDP-1 enable
