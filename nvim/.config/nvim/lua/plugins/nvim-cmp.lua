@@ -19,6 +19,7 @@ return {
     "hrsh7th/nvim-cmp",
     config = function()
       local cmp = require("cmp")
+      require("cmp_nvim_lsp").setup()
       require("luasnip.loaders.from_vscode").lazy_load()
 
       cmp.setup({
