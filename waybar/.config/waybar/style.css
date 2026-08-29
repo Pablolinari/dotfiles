@@ -69,10 +69,17 @@ window#waybar {
   color: @fg-bright;
 }
 
+/* .active = workspace actual en hyprland/workspaces; .focused = sway/workspaces */
+#workspaces button.active,
 #workspaces button.focused {
   background: @accent;
   color: @bg;
   font-weight: 700;
+}
+
+#workspaces button.visible {
+  background: @pill-hover;
+  color: @fg-bright;
 }
 
 #workspaces button.urgent {
