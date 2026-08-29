@@ -16,8 +16,8 @@ keymap.set("n", "<leader>o", ':update <CR> :source <CR>', { desc = "source" })
 keymap.set("n", "<leader>gd", "gf", { desc = "Abrir archivo/ruta bajo el cursor" })
 --nvimtree and oil keymaps 
 	
---keymap.set("n", "<leader>e", "<cmd>Oil --float<CR>", { desc = "open oil" }) -- split window vertically
-keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "open oil" }) -- split window vertically
+keymap.set("n", "<leader>e", "<cmd>Oil --float<CR>", { desc = "open oil" }) -- split window vertically
+--keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "open oil" }) -- split window vertically
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" }) -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" }) -- split window horizontally
 keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" }) -- make split windows equal width & height
