@@ -3,8 +3,9 @@ return{
   config = function()
     require("toggleterm").setup({
       open_mapping = [[<c-y>]], -- Ctrl + \ para abrir/cerrar
-      direction = 'float',      -- Estilo flotante como lazygit
+      direction = 'horizontal',      -- Estilo flotante como lazygit
       close_on_exit = true,     -- Se cierra al terminar el comando
+			
     })
   end
 }
