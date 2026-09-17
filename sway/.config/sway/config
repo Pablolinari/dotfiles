@@ -28,14 +28,19 @@ exec --no-startup-id nm-applet
 output HDMI-0 resolution 2560x1080
 exec swaymsg 'workspace 1; exec firefox'
 exec swaymsg 'workspace 2; exec kitty'
-## for spotify forward and backwards  , stop/play music 
+## for spotify forward and backwards  , stop/play music
 
-#bindsym $mod + comma exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
+bindsym $mod+comma exec --no-startup-id dbus-send --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
 
-#bindsym $mod + period exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+bindsym $mod+period exec --no-startup-id dbus-send --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
 
+bindsym $mod+semicolon exec --no-startup-id dbus-send --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
 
-#bindsym $mod + semicolon exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+# Teclas multimedia dedicadas del teclado (controlan cualquier reproductor con MPRIS)
+bindsym --locked XF86AudioPlay exec --no-startup-id playerctl play-pause
+bindsym --locked XF86AudioNext exec --no-startup-id playerctl next
+bindsym --locked XF86AudioPrev exec --no-startup-id playerctl previous
+bindsym --locked XF86AudioStop exec --no-startup-id playerctl stop
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -81,7 +86,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+ % split _
+bindsym $mod+backslash split h
 
 # split in vertical orientation
 bindsym $mod+Shift+v split v
@@ -144,9 +149,9 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r reload
 # restart sway inplace (preserves your layout/session)
-bindsym $mod+Shift+r restart
+#bindsym $mod+Shift+r restart
 # exit sway (logs you out of your Wayland session)
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 
@@ -156,9 +161,11 @@ bindsym $mod+g exec --no-startup-id firefox --new-window https://gemini.google.c
 bindsym $mod+s exec spotify
 bindsym $mod+n exec systemctl suspend
 bindsym $mod+Shift+q exec shutdown now
+# alterna el layout de teclado entre Español y US Internacional
+bindsym $mod+Shift+t exec sway-kb-toggle
 exec_always "killall waybar; exec waybar"
 bindsym $mod+b exec killall -SIGUSR1 waybar
-				output * background /home/pablolinari/dotfiles/wapaper1.png fill 
+				output * background /home/pablolinari/dotfiles/wapaper1.png fill
 
 
 # Mapeo de evento: Cierre y apertura de tapa del portátil
