@@ -14,7 +14,14 @@ return {
           winblend = 10,
         },
       },
-      -- 2. VER ARCHIVOS OCULTOS
+      -- 2. VISTA PREVIA (PREVIEW)
+      preview_win = {
+        update_on_cursor_moved = true, -- Actualiza la vista previa al mover el cursor
+      },
+      keymaps = {
+        ["<C-p>"] = "actions.preview", -- Abre o cierra la ventana de vista previa
+      },
+      -- 3. VER ARCHIVOS OCULTOS
       view_options = {
         -- Muestra archivos que empiezan con "." (dotfiles)
         show_hidden = true,
@@ -23,11 +30,10 @@ return {
           return name == ".." -- Oculta el directorio superior para que sea más limpio
         end,
       },
-      -- 3. INFORMACIÓN ÚTIL (COLUMNAS)
+      -- 4. INFORMACIÓN ÚTIL (COLUMNAS)
       -- Aquí definimos qué ver junto al nombre: permisos, tamaño y fecha
       default_file_explorer = true,
     })
-
     -- Mapeo para abrir Oil directamente en modo flotante
   end,
 }
