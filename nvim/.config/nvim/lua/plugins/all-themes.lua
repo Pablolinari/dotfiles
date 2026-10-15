@@ -1,4 +1,5 @@
 return {
+{ "brargenzilian/darcula-solid.nvim" },
 {
   "loctvl842/monokai-pro.nvim",
   lazy = false,

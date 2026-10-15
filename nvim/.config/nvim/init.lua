@@ -26,15 +26,16 @@ vim.api.nvim_create_autocmd("BufWritePost", {
 })
 require("config.options")
 require("config.keymaps")
+require("config.diagnostics")
 vim.o.conceallevel = 2
 vim.cmd(":hi statusline guibg=NONE")
 -- para transparencia
 vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-vim.cmd("colorscheme habamax")
+vim.cmd("colorscheme darcula-solid")
 vim.g.adwaita_darker = true -- for darker version
 --cambiar colores  del fondo
-vim.o.background = "dark"
+vim.o.background = "light"
 
 -- Habilita la auto-lectura de archivos modificados externamente
 vim.o.autoread = true
