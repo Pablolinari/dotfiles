@@ -38,6 +38,15 @@ return {
 		"rose-pine/neovim",
 		name = "rose-pine",
 		priority = 1000,
+		config = function()
+			require("rose-pine").setup({
+				-- Fondo negro puro para las variantes oscuras
+				palette = {
+					main = { base = "#000000", surface = "#0a0a0f", overlay = "#16141f" },
+					moon = { base = "#000000", surface = "#0a0a0f", overlay = "#16141f" },
+				},
+			})
+		end,
 	},
 	{
 		"OldJobobo/miasma.nvim",
